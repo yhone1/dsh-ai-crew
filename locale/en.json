@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "AI crew",
+    "description": "Assigns different models to different work inside one main session: smart work to a strong model, grunt work to a local one."
+  }
+}

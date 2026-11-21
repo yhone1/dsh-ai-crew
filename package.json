@@ -1,0 +1,37 @@
+{
+  "name": "dsh-ai-crew",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Assign different AI models to different work inside one main session.",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "model-routing",
+    "ai-crew"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhone1/dsh-ai-crew.git"
+  },
+  "homepage": "https://github.com/yhone1/dsh-ai-crew#readme",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

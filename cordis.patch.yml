@@ -1,0 +1,20 @@
+# AI 施工队
+#
+# 一个主会话里给不同的活分配不同的模型：
+#   default —— 新会话的默认模型
+#   smart   —— 设计、debug、规划这类需要脑子的活
+#   grunt   —— 批量改、跑命令、翻日志这类脏活
+# 装好后工具 model_route(task) 会按配置返回对应路由。
+- insert:
+    - id: ai-crew
+      name: 'dsh-ai-crew'
+      config:
+        default:
+          provider: deepseek-official
+          model: deepseek-flash
+        smart:
+          provider: deepseek-official
+          model: deepseek-flash
+        grunt:
+          provider: magpie
+          model: basalt/IQ3_S
